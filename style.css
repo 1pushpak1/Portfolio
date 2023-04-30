@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+}
+#logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    font-family: 'Cinzel Decorative', cursive;
+}
+#logo:hover {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 0 0 5px #fff, 
+    0 0 10px #fff, 
+    0 0 15px #0073e6, 
+    0 0 20px #0073e6, 
+    0 0 25px #0073e6, 
+    0 0 30px #0073e6, 
+    0 0 35px #0073e6;
+}
+header li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+header a {
+    text-decoration: none;
+    color: violet;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+header a:hover {
+    color: rgb(15, 15, 151);
+    font-size: 1.7rem;
+    font-weight: 800;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.icon{
+    display: none;
+}
+@media  screen and (max-width: 600px) {
+    header a:not(:first-child){
+        display: none;
+    }
+    header a.icon{
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px){
+     header .responsive{
+        position: relative;
+     }    
+     header .responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+     }
+}
